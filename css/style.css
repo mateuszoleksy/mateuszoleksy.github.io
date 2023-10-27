@@ -1,41 +1,72 @@
 /* imports for fonts */
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 body
 {
   color: #303030;
   font-weight: 700;
   font-size: 2em;
-  background-image: linear-gradient(125deg, azure 0%, cornflowerblue 100%);
+  background-image: linear-gradient(125deg, white 0%, azure 100%);
     letter-spacing: 2px;
   overflow: hidden;
   letter-spacing: 2px;
 }
 
-#center
+#globe
 {
-    font-family: 'Rock Salt', cursive;
-    transform: translate(-50%, -50%);
+  position:absolute;
+  top: 50%;
+  text-shadow: -5px 5px #F0F0F0;
+  left: 50%;
+    font-size: 5em;
+   transform: translate(-50%, -50%) rotate(-30deg) skew(30deg,0deg);
+  box-sizing: border-box;
     text-align: center;
     align-items: center;
     justify-content: center;
-    position:absolute;
-    top: 50%;
-    text-shadow: -1px 1px black;
-    left: 50%;
+    line-height: 0px;
+    padding: 0px;
 }
 
-#des
+#time
 {
     font-size: 0.5em;
-    margin: 1em;
-    line-height: 1.5em;
-    font-family: 'Luckiest Guy', cursive;
+margin: 1em;
+line-height: 1.5em;}
+
+.icon-globe
+{
+    margin: 0px;
+    line-height: 0px;
+    padding: 0px;
 }
 
-#title
+#worldwide
 {
-    font-size: 0.5em;
-    margin: 1em;
-    line-height: 1.5em;
+    font-size: 50px;
+}
+
+#before
+{
+line-height: 0.7em
+}
+
+@media only screen and (max-device-width: 800px) {
+    body
+    {
+        background: white !important;
+    }
+    #globe
+    {
+        font-size: 1em !important;
+    }
+    #worldwide
+    {
+        font-size: 1em !important;
+        line-height: 1em;
+    }
+    #before
+    {
+    line-height: 1em
+    }
 }
