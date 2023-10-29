@@ -4,6 +4,7 @@ function setClock()
         let minute = document.getElementById("minute");
         let hour = document.getElementById("hour");
         let second = document.getElementById("second");
+        let second_second = document.getElementById("second_second");
 
         let date = new Date();
         let milliseconds = date.getMilliseconds() / 1000;
@@ -12,8 +13,9 @@ function setClock()
         let hours = (minutes + date.getHours()) / 12;
 
         setRotation(second, seconds);
-        setRotation(minute, minutes);
-        setRotation(hours, hours);
+        setRotation(minute, minutes - 6);
+        setRotation(hour, hours);
+        setRotation(second_second, 180 + seconds);
     }
 
     function setRotation(element, ratio) {
