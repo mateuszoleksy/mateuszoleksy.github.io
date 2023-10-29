@@ -13,7 +13,7 @@ function setClock()
 
         setRotation(second, seconds);
         setRotation(minute, minutes);
-        setRotation(hours, hours);
+        setRotation(hour, hours);
     }
 
     function setRotation(element, ratio) {
