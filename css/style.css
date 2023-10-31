@@ -55,7 +55,7 @@ transform: rotate(60deg);
 {
     top: 50%;
     right: 0;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, -50%);
     position: absolute;
     font-size: 1.2rem;
     padding: 1px;
@@ -93,7 +93,7 @@ transform: rotate(150deg);
 {
     top: 50%;
     left: 0;
-    transform: translate(50%, 0);
+    transform: translate(50%, -50%);
     position: absolute;
     font-size: 1.2rem;
     padding: 1px;
