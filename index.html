@@ -1,46 +1,52 @@
-<!doctype html>
-<html lang="en">
-    <head>
-    <title>Mateusz Oleksy</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" >
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    </head>
-    <body>
-          <header>
-            <div id="center">
 
-                <div id="clock">
-                    <div class="number one">|</div>
-                    <div class="number two">|</div>
-                    <div class="three">3</div>
-                    <div class="number four">|</div>
-                    <div class="number five">|</div>
-                    <div class="number six">9</div>
-                    <div class="number seven">|</div>
-                    <div class="number eight">|</div>
-                    <div class="nine">9</div>
-                    <div class="number ten">|</div>
-                    <div class="number eleven">|</div>
-                    <div class="number twelve">12</div>
+<!-- saved from url=(0022)http://192.168.88.234/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-8">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="refresh" content="10;URL=/">
 
-                    <div id="hour" class="hand"></div>
-                    <div id="minute" class="hand"></div>
-                    <div id="second" class="hand"></div>
-                    <div id="second_second" class="hand"></div>
-                    <div id="dot"></div>
+<title>UEP6000/PL500</title>
+<style type="text/css">
+<!--
+body { background-color=#CCFFFF }table { width: 95% }
+caption { FONT-SIZE:middle;font-weight:bold }
+#head { border-style:none;FONT-SIZE:large;FONT_WEIGHT:bold }
+#blind { border-style:none }
+#GHD,#VHD,#THD { color:black;font-weight:bold }
+#GOK,#VOK,#TOK { color:black;font-weight:normal }
+#GER,#VER,#TER { color:red;font-weight:bolder }
+#GWN,#VER,#TER { color:darkorange;font-weight:normal}
+#tab { background-color:black }
+th,#tab td { background-color:#DDFFFF }
+-->
+</style>
+</head>
+<body>
+<div align="center"><center><p>
+<table id="head">
+<tbody><tr>
+<td><a href="http://www.wiener-d.com/manuals.html?om=UEL6000+4.04" title="Online Manual">UEP6000/PL500</a></td>
+<td align="right"><a href="http://www.wiener-d.com/" title="Plein &amp; Baus GmbH">W-IE-NE-R</a></td>
+</tr>
+</tbody></table>
+</p></center></div>
+<form name="Buttons" method="get"><div align="center"><center><table id="blind"><tbody><tr>
+<td><input title="Switch the power supply on or off" type="submit" name="SW_0" value="MAIN POWER">
+</td>
+<td align="center"><input type="submit" name="SW_1" value="       VME SYSRESET      " title="Generate a VME SYSRESET signal" align="center">
+</td><td title="Increment or decrement the rotation speed of the crate fans" align="right"><input type="submit" name="SW_2" value="FAN SLOWER">
+<input type="submit" name="SW_3" value="FAN FASTER">
+</td>
+</tr><tr></tr></tbody></table></center></div></form>
+<div align="center"><center><table id="tab"><caption>Global Status</caption>
+<colgroup><col width="66%"><col width="33%"></colgroup><tbody><tr><td id="GHD">Power Supply Status</td><td id="GOK">ON</td></tr>
+<tr><td id="GHD">Fan Tray Status</td><td id="GOK">OK</td></tr>
+<tr><td id="GHD">Fan Speed</td><td id="GWN">2200 RPM</td></tr><tr><td id="GHD">Fan Speed (mean)</td><td id="GOK">2195 RPM</td></tr><tr><td id="GHD">Fan Temperature</td><td id="GOK">26°C</td></tr>
+</tbody></table></center></div>
+<div align="center"><center><table id="tab"><caption>Output Voltages</caption>
+<colgroup align="center"><col width="20%"><col width="20%"><col width="20%"><col width="20%"><col width="20%"></colgroup><thead><tr><th id="VHD">Channel</th><th id="VHD">Name</th><th id="VHD">Voltage</th><th id="VHD">Current</th><th id="VHD">Status</th></tr></thead>
+<tbody><tr align="center"><td id="VOK">U0</td><td id="VOK">+5V0</td><td id="VOK">5.00V</td><td id="VOK">12A</td><td id="VOK">OK</td></tr><tr align="center"><td id="VOK">U1</td><td id="VOK">+12V</td><td id="VOK">12.0V</td><td id="VOK">2.5A</td><td id="VOK">OK</td></tr><tr align="center"><td id="VOK">U5</td><td id="VOK">-12V</td><td id="VOK">12.0V</td><td id="VOK">0.0A</td><td id="VOK">OK</td></tr></tbody></table>
+</center></div>
 
-                </div>
-                <div id="title">Mateusz Oleksy</div>
-                <div class="des">Fortis fortuna adiuvat</div>
 
-            </div>
 
-            </header>
-
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/clock.js"></script>
-    </body>
-</html>
+</body></html>
