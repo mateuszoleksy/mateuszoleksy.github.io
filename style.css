@@ -206,7 +206,8 @@ header, aside, nav, main, section, article
     }
     #my_profile
     {
-        width: 200px
+        width: 200px;
+        transform: rotate(5deg);
     }
 }
 
@@ -219,4 +220,119 @@ header, aside, nav, main, section, article
     {
         width: 200px;
     }
+}
+
+.custom-shape {
+    width: 300px;
+    height: 300px;
+}
+
+@keyframes flicker_box {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        box-shadow:
+                0 0 7px #fff,
+                0 0 10px #fff,
+                0 0 21px #fff,
+                0 0 42px #5271ff,
+                0 0 82px #5271ff,
+                0 0 92px #5271ff,
+                0 0 102px #5271ff,
+                0 0 151px #5271ff;
+    }
+    20%, 24%, 55% {
+        box-shadow: none;
+    }
+}
+
+#clock
+{
+    width: 100px;
+    height: 100px;
+    transform: translate(-50%, 0);
+    border: 3px solid white;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 25%;
+    animation: flicker_box 2s infinite alternate;
+    box-shadow:
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 42px #5271ff,
+            0 0 82px #5271ff,
+            0 0 92px #5271ff,
+            0 0 102px #5271ff,
+            0 0 151px #5271ff;
+}
+
+
+.hand
+{
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    height: 50%;
+    font-size: 1rem;
+    margin: 0;
+    background-color: black;
+    transform-origin: bottom;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    z-index: 10;
+    transform: translate(-50%, 0);
+}
+
+#minute
+{
+    width: 3px;
+    height: 35%;
+    --rotation: 0;
+    transform: translate(-50%, 0) rotate(calc(var(--rotation) * 1deg));
+    z-index: 2;
+}
+
+#hour
+{
+    width: 5px;
+    height: 30%;
+    --rotation: 30;
+    transform: translate(-50%, 0) rotate(calc(var(--rotation) * 1deg));
+    z-index: 1;
+}
+
+#second
+{
+    background-color: orangered;
+    width: 1px;
+    --rotation: 60;
+    transform: translate(-50%, 0) rotate(calc(var(--rotation) * 1deg));
+    z-index: 3;
+}
+
+#second_second
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 20%;
+    background-color: orangered;
+    width: 1px;
+    --rotation: 60;
+    transform-origin: top;
+    transform: translate(-50%, 0) rotate(calc(var(--rotation) * 1deg));
+    z-index: 3;
+}
+
+#dot
+{
+    background-color: orangered;
+    border: 2px orangered solid;
+    height: 7%;
+    width: 7%;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    border-radius: 50%;
 }

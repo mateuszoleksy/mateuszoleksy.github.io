@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mateusz Oleksy Homepage</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
+    <meta name="keywords" content="Mateusz Oleksy Portfolio, Personal Webpage">
+    <meta name="description" content="Homepage of Mateusz Oleksy">
     <meta name="robots" content="nofollow, noindex">
-    <meta charset="UTF-8">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,7 +29,7 @@
                 </div>
             </div>
             <div class="col-7 col-xl-6 text-end align-items-center align-middle">
-                <h1 class="text-primary d-inline-block justify-content-end mx-3 fs-2" id="title"><span class="icon-home d-none d-lg-inline"></span>Mateusz Oleksy <button onclick="switchButton()" id="btn_switch" class="d-inline-block mt-2"><span class="icon-toggle-on" id="icon_switch"></span></button></h1>
+                <h1 class="text-primary d-inline-block justify-content-end mx-3 fs-2" id="title"><span class="icon-home d-none d-lg-inline"></span>Mateusz Oleksy <button title="btn-switch" onclick="switchButton()" id="btn_switch" class="d-inline-block mt-2"><span class="icon-toggle-on" id="icon_switch"></span></button></h1>
             </div>
         </header>
         <main>
@@ -50,7 +50,7 @@
                 <div class="row my-5 navi rounded p-2 my-2 shadow-lg">
                     <div class="col-12 text-start align-self-center align-items-center text-white " id="quotes">
                         <blockquote>
-                            <h4 class="inter" id="quote-text"><span class="icon-star"></span>“I was an ordinary person who studied hard. There are no miracle people. It happens they get interested in this thing and they learn all this stuff, but they’re just people.”</h4>
+                            <h4 class="inter" id="quote-text"><span class="icon-star"></span>I was an ordinary person who studied hard. There are no miracle people. It happens they get interested in this thing and they learn all this stuff, but they’re just people.</h4>
                             <h5 class="text-opacity-50 text-end" id="quote-author">Richard Feynman</h5>
                             </blockquote>
                     </div>
@@ -141,7 +141,7 @@
                                         I like music, almost all genres
                                     </h2>
                                     <h4 class="text-white-50 card-text">
-                                      <a href="https://open.spotify.com/user/yu6oy4z1dfud1zs42iko5bq03" target="_blank" class="text-decoration-none"><span class="icon-spotify">Link to my spotify profile  </span></a>
+                                      <a href="https://open.spotify.com/user/yu6oy4z1dfud1zs42iko5bq03" rel="noopener" target="_blank" class="text-decoration-none"><span class="icon-spotify">Link to my spotify profile  </span></a>
                                     </h4>
                                 </div>
                             </div>
@@ -157,132 +157,14 @@
         </main>
         <footer class="text-center bg-opacity-25 text-white-50">
             <h1>© Mateusz Oleksy
-            <span id="date">2023</span>
+            <span id="date">2025</span>
             </h1>
         </footer>
         <aside id="socials" class="text-primary">
-            <a href="https://github.com/mateuszoleksy" target="_blank"><span class="icon-github"></span></a>
-            <a href="https://github.com/mateuszoleksy" target="_blank"><span class="icon-linkedin"></span></a>
+            <a href="https://github.com/mateuszoleksy" rel="noopener" target="_blank"><span class="icon-github"></span></a>
+            <a href="https://linkedin.com/in/mateusz-oleksy-8b1156249/" rel="noopener" target="_blank"><span class="icon-linkedin"></span></a>
         </aside>
     </div>
-    <style>
-
-        .custom-shape {
-            width: 300px;
-            height: 300px;
-        }
-
-        @keyframes flicker_box {
-            0%, 18%, 22%, 25%, 53%, 57%, 100% {
-                box-shadow:
-                        0 0 7px #fff,
-                        0 0 10px #fff,
-                        0 0 21px #fff,
-                        0 0 42px #5271ff,
-                        0 0 82px #5271ff,
-                        0 0 92px #5271ff,
-                        0 0 102px #5271ff,
-                        0 0 151px #5271ff;
-            }
-            20%, 24%, 55% {
-                box-shadow: none;
-            }
-        }
-
-        #clock
-        {
-            width: 100px;
-            height: 100px;
-            transform: translate(-50%, 0);
-            border: 3px solid white;
-            background-color: white;
-            border-radius: 50%;
-            margin-left: 25%;
-            animation: flicker_box 2s infinite alternate;
-            box-shadow:
-                    0 0 7px #fff,
-                    0 0 10px #fff,
-                    0 0 21px #fff,
-                    0 0 42px #5271ff,
-                    0 0 82px #5271ff,
-                    0 0 92px #5271ff,
-                    0 0 102px #5271ff,
-                    0 0 151px #5271ff;
-        }
-
-
-        .hand
-        {
-            position: absolute;
-            left: 50%;
-            bottom: 50%;
-            height: 50%;
-            font-size: 1rem;
-            margin: 0;
-            background-color: black;
-            transform-origin: bottom;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-            z-index: 10;
-            transform: translate(-50%, 0);
-        }
-
-        #minute
-        {
-            width: 3px;
-            height: 35%;
-            --rotation: 0;
-            transform: translate(-50%, 0) rotate(calc(var(--rotation) * 1deg));
-            z-index: 2;
-        }
-
-        #hour
-        {
-            width: 5px;
-            height: 30%;
-            --rotation: 30;
-            transform: translate(-50%, 0) rotate(calc(var(--rotation) * 1deg));
-            z-index: 1;
-        }
-
-        #second
-        {
-            background-color: orangered;
-            width: 1px;
-            --rotation: 60;
-            transform: translate(-50%, 0) rotate(calc(var(--rotation) * 1deg));
-            z-index: 3;
-        }
-
-        #second_second
-        {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            height: 20%;
-            background-color: orangered;
-            width: 1px;
-            --rotation: 60;
-            transform-origin: top;
-            transform: translate(-50%, 0) rotate(calc(var(--rotation) * 1deg));
-            z-index: 3;
-        }
-
-        #dot
-        {
-            background-color: orangered;
-            border: 2px orangered solid;
-            height: 7%;
-            width: 7%;
-            left: 50%;
-            top: 50%;
-            position: absolute;
-            transform: translate(-50%, -50%);
-            z-index: 10;
-            border-radius: 50%;
-        }
-
-    </style>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
     <script>
 
@@ -380,7 +262,7 @@
         {
             document.getElementById("quotes").classList.remove('run_animation');
             document.getElementById("quote-author").innerText = quotes[quotesCount].author;
-            document.getElementById("quote-text").innerText = quotes[quotesCount].text;
+            document.getElementById("quote-text").innerHTML = '<span class="icon-star"></span>' + quotes[quotesCount].text;
             document.getElementById("quotes").classList.add('run_animation');
             quotesCount++;
             if (quotesCount === quotes.length)
