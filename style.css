@@ -1,0 +1,222 @@
+header, aside, nav, main, section, article
+{
+    display: block;
+}
+
+
+.inter {
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+.navi
+{
+    background: rgba( 255, 255, 255, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+#socials
+{
+    position: fixed;
+    right: 0;
+    top: 50%;
+    font-size: 2em;
+}
+
+#socials > a
+{
+    display: block;
+    border: 2px solid white;
+    margin: 2px;
+    padding: 2px;
+}
+
+.card
+{
+    opacity: 70%;
+    z-index: 0;
+    transition-duration: 2s;
+}
+
+.card:hover
+{
+    transform: scale(1.1);
+    opacity: 100%;
+    z-index: 1;
+}
+
+#clock
+{
+    color: #fff !important;
+    text-shadow:
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 42px #5271ff,
+            0 0 82px #5271ff,
+            0 0 92px #5271ff,
+            0 0 102px #5271ff,
+            0 0 151px #5271ff;
+}
+
+.run_animation
+{
+    animation: slidein 2s linear;
+}
+
+#main_div
+{
+    background-image: url("stars.jpg"); /* by Jakub Novacek on Pexels */
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: 2s linear;
+    animation-name: slidein;
+    background-position: center;
+}
+
+.light-mode
+{
+    background-image: url("desert.jpg") !important; /* by Francesco Ungaro on Pexels */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.light-mode-text
+{
+    color: black !important;
+}
+
+.light-mode-text > a
+{
+    color: black !important;
+}
+
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        text-shadow:
+                0 0 7px #fff,
+                0 0 10px #fff,
+                0 0 21px #fff,
+                0 0 42px #5271ff,
+                0 0 82px #5271ff,
+                0 0 92px #5271ff,
+                0 0 102px #5271ff,
+                0 0 151px #5271ff;
+    }
+    20%, 24%, 55% {
+        text-shadow: none;
+    }
+}
+
+#title
+{
+    color: #fff !important;
+    transform: skew(-10deg);
+    animation: flicker 5s infinite alternate;
+    text-shadow:
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 42px #5271ff,
+            0 0 82px #5271ff,
+            0 0 92px #5271ff,
+            0 0 102px #5271ff,
+            0 0 151px #5271ff;
+}
+
+
+#btn_switch
+{
+    background: transparent;
+    border: 0;
+    color: white;
+}
+
+
+#my_profile
+{
+    width: 300px;
+    background-attachment: fixed;
+    background-blend-mode: screen;
+    height: auto;
+    position: relative;
+    animation: 2s linear;
+    animation-name: image;
+    z-index: 0;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.text-opacity-50
+{
+    opacity: 50% !important;
+}
+
+#my_profile2
+{
+    width: 300px;
+    background-attachment: fixed;
+    background-blend-mode: screen;
+    position: relative;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    animation: 2s linear;
+    animation-name: image;
+    z-index: 1;
+}
+
+@keyframes slidein {
+
+        0% {opacity: 0%; }
+        10% {opacity: 10%; }
+        20% {opacity: 20%; }
+        30% {opacity: 30%; }
+        40% {opacity: 40%; }
+        50% {opacity: 50%; }
+        60% {opacity: 60%; }
+        70% {opacity: 70%; }
+}
+
+@keyframes image {
+
+    0% {
+        rotate: 20deg;
+    }
+    100% {
+        rotate: 0deg;
+    }
+}
+
+@media (min-width: 992px) {
+    #my_profile2
+    {
+        position: absolute;
+        transform: rotate(-20deg);
+        left: 50%;
+        top: 15%;
+        width: 150px;
+    }
+    #my_profile
+    {
+        width: 200px
+    }
+}
+
+@media (min-width: 1200px) {
+    #my_profile
+    {
+        width: 300px;
+    }
+    #my_profile2
+    {
+        width: 200px;
+    }
+}
