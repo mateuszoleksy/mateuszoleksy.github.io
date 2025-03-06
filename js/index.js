@@ -65,7 +65,9 @@ let elemBtnBool = 0; //when dark mode
 function switchButton(e)
 {
     document.getElementById("main_div").classList.toggle("light-mode");
-    document.getElementById("socials").classList.toggle("light-mode-text");
+    document.getElementById("btn_switch").classList.toggle("light-mode-text");
+    document.getElementById("clock").classList.toggle("light-mode-bg");
+    document.getElementById("title").classList.toggle("light-mode-text");
     elemBtnBool = ~elemBtnBool;
     if (elemBtnBool) {
         document.getElementById("icon_switch").classList.remove("icon-toggle-on");
@@ -74,6 +76,7 @@ function switchButton(e)
         document.getElementById("icon_switch").classList.remove("icon-toggle-off");
         document.getElementById("icon_switch").classList.add("icon-toggle-on");
     }
+    setTimeout(() => {document.getElementById("btn_switch").classList.remove("clicked")}, 200);
 }
 let quotes = [
     {
