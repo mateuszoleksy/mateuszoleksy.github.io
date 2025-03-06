@@ -36,7 +36,6 @@ header, aside, nav, main, section, article
     position: fixed;
     right: 0;
     top: 50%;
-    right: 3px;
     font-size: 2em;
 z-index: 2;
 }
