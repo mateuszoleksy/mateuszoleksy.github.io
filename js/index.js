@@ -66,6 +66,7 @@ function switchButton(e)
 {
     document.getElementById("main_div").classList.toggle("light-mode");
     document.getElementById("btn_switch").classList.toggle("light-mode-text");
+    document.getElementById("socials").classList.toggle("light-mode-bg");
     document.getElementById("clock").classList.toggle("light-mode-bg");
     document.getElementById("title").classList.toggle("light-mode-text");
     elemBtnBool = ~elemBtnBool;
