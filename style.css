@@ -3,7 +3,6 @@ header, aside, nav, main, section, article
     display: block;
 }
 
-
 .inter {
             font-family: "Inter", sans-serif;
             font-optical-sizing: auto;
@@ -69,7 +68,7 @@ z-index: 2;
 {
     opacity: 70%;
     z-index: 0;
-    transition-duration: 2s;
+    transition-duration: 1s;
 }
 
 .card:hover
@@ -77,20 +76,6 @@ z-index: 2;
     transform: scale(1.1);
     opacity: 100%;
     z-index: 1;
-}
-
-#clock
-{
-    color: #fff !important;
-    text-shadow:
-            0 0 7px #fff,
-            0 0 10px #fff,
-            0 0 21px #fff,
-            0 0 42px #5271ff,
-            0 0 82px #5271ff,
-            0 0 92px #5271ff,
-            0 0 102px #5271ff,
-            0 0 151px #5271ff;
 }
 
 .run_animation
@@ -103,6 +88,7 @@ z-index: 2;
     background-image: url("stars.jpg"); /* by Jakub Novacek on Pexels */
     background-size: cover;
     background-repeat: no-repeat;
+    transition-duration: 1s;
     animation: 2s linear;
     animation-name: slidein;
     background-position: center;
@@ -112,6 +98,7 @@ z-index: 2;
 {
     background-image: url("desert.jpg") !important; /* by Francesco Ungaro on Pexels */
     background-size: cover;
+    transition-duration: 1s;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -312,7 +299,8 @@ z-index: 2;
             0 0 7px #fff,
             0 0 10px #fff,
             0 0 21px #fff,
-            0 0 42px #5271ff
+            0 0 42px #5271ff;
+    transition-duration: 1s;
 }
 
 
