@@ -170,7 +170,6 @@ z-index: 2;
     height: auto;
     position: relative;
     animation: 2s linear;
-    animation-name: image;
     z-index: 0;
     border: 2px solid black;
     border-radius: 10px;
@@ -191,7 +190,6 @@ z-index: 2;
     border: 2px solid black;
     border-radius: 10px;
     animation: 2s linear;
-    animation-name: image;
     z-index: 1;
 }
 
