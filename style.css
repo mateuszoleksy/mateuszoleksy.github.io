@@ -3,13 +3,6 @@ header, aside, nav, main, section, article
     display: block;
 }
 
-.inter {
-            font-family: "Inter", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 400;
-            font-style: normal;
-        }
-
 .navi
 {
     background: rgba( 255, 255, 255, 0.05 );
@@ -85,8 +78,9 @@ z-index: 2;
 
 #main_div
 {
-    background-image: url("stars.jpg"); /* by Jakub Novacek on Pexels */
+    background-image: url("stars_min.webp");
     background-size: cover;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     transition-duration: 1s;
     animation: 2s linear;
@@ -96,7 +90,7 @@ z-index: 2;
 
 .light-mode
 {
-    background-image: url("desert.jpg") !important; /* by Francesco Ungaro on Pexels */
+    background-image: url("desert-min.webp") !important; /* by Francesco Ungaro on Pexels */
     background-size: cover;
     transition-duration: 1s;
     background-repeat: no-repeat;
@@ -228,7 +222,7 @@ z-index: 2;
     {
         position: absolute;
         transform: rotate(-20deg);
-        left: 50%;
+        left: 52%;
         top: 15%;
         width: 150px;
     }

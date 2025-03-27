@@ -1,9 +1,10 @@
 
 .icon-home:before { content: '\e800'; } /* '' */
 .icon-star:before { content: '\e801'; } /* '' */
+.icon-linkedin:before { content: '\f0e1'; } /* '' */
+.icon-github:before { content: '\f113'; } /* '' */
 .icon-sun:before { content: '\f185'; } /* '' */
 .icon-spotify:before { content: '\f1bc'; } /* '' */
 .icon-toggle-off:before { content: '\f204'; } /* '' */
 .icon-toggle-on:before { content: '\f205'; } /* '' */
-.icon-github:before { content: '\f300'; } /* '' */
-.icon-linkedin:before { content: '\f318'; } /* '' */
+.icon-medium:before { content: '\f23a'; } /* '' */

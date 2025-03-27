@@ -7,21 +7,15 @@
   "ascent": 850,
   "glyphs": [
     {
-      "uid": "7132e1233bc16cd1b6efe7e29d3613a5",
-      "css": "linkedin",
-      "code": 62232,
-      "src": "entypo"
+      "uid": "aa035df0908c4665c269b7b09a5596f3",
+      "css": "sun",
+      "code": 61829,
+      "src": "fontawesome"
     },
     {
-      "uid": "d94334f23acba022bfd68e49d76b31bb",
-      "css": "github",
-      "code": 62208,
-      "src": "entypo"
-    },
-    {
-      "uid": "fb4794d89b77ab712ad56c0dc4c76c6b",
-      "css": "spotify",
-      "code": 61884,
+      "uid": "2a4e6c99b732a57da40e32fa2a7800a4",
+      "css": "toggle-off",
+      "code": 61956,
       "src": "fontawesome"
     },
     {
@@ -37,9 +31,15 @@
       "src": "fontawesome"
     },
     {
-      "uid": "2a4e6c99b732a57da40e32fa2a7800a4",
-      "css": "toggle-off",
-      "code": 61956,
+      "uid": "e9107949dd6c9e8ab2b29ae07156e38c",
+      "css": "linkedin",
+      "code": 61665,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "5e0a374728ffa8d0ae1f331a8f648231",
+      "css": "github",
+      "code": 61715,
       "src": "fontawesome"
     },
     {
@@ -49,9 +49,15 @@
       "src": "fontawesome"
     },
     {
-      "uid": "aa035df0908c4665c269b7b09a5596f3",
-      "css": "sun",
-      "code": 61829,
+      "uid": "bf09b1c6561dc0ced707476e2cd83d29",
+      "css": "medium",
+      "code": 62010,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "fb4794d89b77ab712ad56c0dc4c76c6b",
+      "css": "spotify",
+      "code": 61884,
       "src": "fontawesome"
     }
   ]
