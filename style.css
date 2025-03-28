@@ -78,9 +78,9 @@ z-index: 2;
 
 #main_div
 {
-    background-image: url("stars_min.webp");
+    background-image: url("img/stars_min.webp");
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: local;
     background-repeat: no-repeat;
     transition-duration: 1s;
     animation: 2s linear;
@@ -90,7 +90,7 @@ z-index: 2;
 
 .light-mode
 {
-    background-image: url("desert-min.webp") !important; /* by Francesco Ungaro on Pexels */
+    background-image: url("img/desert-min.webp") !important; /* by Francesco Ungaro on Pexels */
     background-size: cover;
     transition-duration: 1s;
     background-repeat: no-repeat;
