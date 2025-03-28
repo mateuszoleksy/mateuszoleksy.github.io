@@ -80,7 +80,7 @@ z-index: 2;
 {
     background-image: url("img/stars_min.webp");
     background-size: cover;
-    background-attachment: local;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     transition-duration: 1s;
     animation: 2s linear;
