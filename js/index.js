@@ -11,6 +11,14 @@ window.addEventListener('scroll', () => {
       metaTag.setAttribute("content", "#ffffff");
     }
   }, false);
+  
+window.addEventListener('scroll', () => {
+    if (window.scrollY / window.innerHeight > 0.8) {
+      document.body.style.backgroundColor = "#000000";
+    } else {
+      document.body.style.backgroundColor = "#ffffff";
+    }
+  }, false);
 
 function toDigits(number)
 {
