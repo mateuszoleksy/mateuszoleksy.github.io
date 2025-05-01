@@ -3,23 +3,6 @@ const clock = document.getElementById("clock")
 const dateElem = document.getElementById("date")
 dateElem.innerText = date.getFullYear()+'';
 
-window.addEventListener('scroll', () => {
-    const metaTag = document.querySelector('meta[name="theme-color"]');
-    if (window.scrollY / window.innerHeight > 0.8) {
-      metaTag.setAttribute("content", "#000000");
-    } else {
-      metaTag.setAttribute("content", "#ffffff");
-    }
-  }, false);
-  
-window.addEventListener('scroll', () => {
-    if (window.scrollY / window.innerHeight > 0.8) {
-      document.body.style.backgroundColor = "#000000";
-    } else {
-      document.body.style.backgroundColor = "#ffffff";
-    }
-  }, false);
-
 function toDigits(number)
 {
     if (number/10 < 1)
