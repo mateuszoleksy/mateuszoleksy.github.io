@@ -59,11 +59,30 @@ async function getGitHubRepos() {
         if (count < 8)
             repoContainer.innerHTML += repoCard;
     });
+
+    // Add click event listener to each card body
+    document.querySelectorAll(".card-body").forEach(cardBody => {
+        cardBody.addEventListener("click", () => {
+            if (navigator.vibrate) {
+                navigator.vibrate(200);
+            }
+        });
+    });
+
+    document.getElementById("socials").addEventListener("click", () => {
+        if (navigator.vibrate) {
+            navigator.vibrate(50);
+        }
+    });
 }
 
 let elemBtnBool = 0; //when dark mode
 function switchButton(e)
 {
+    if (navigator.vibrate)
+    {
+        navigator.vibrate(200);
+    }
     document.getElementById("socials").classList.toggle("light-mode-bg");
     document.getElementById("about").classList.toggle("light-mode-text");
     document.getElementById("main_div").classList.toggle("light-mode");
@@ -89,8 +108,19 @@ let quotes = [
     {
         "author": "Steve Jobs",
         "text": "The people who are crazy enough to think they can change the world are the ones that do."
+    },
+    {
+        "author": "Albert Einstein",
+        "text": "Life is like riding a bicycle. To keep your balance, you must keep moving."
+    },
+    {
+        "author": "Mahatma Gandhi",
+        "text": "Be the change that you wish to see in the world."
+    },
+    {
+        "author": "Nelson Mandela",
+        "text": "It always seems impossible until it’s done."
     }
-
 ]
 let quotesCount = 1;
 
