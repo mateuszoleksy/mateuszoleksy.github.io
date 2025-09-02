@@ -60,18 +60,24 @@ async function getGitHubRepos() {
             repoContainer.innerHTML += repoCard;
     });
 
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    if (!prefersDark) {
+        switchButton();
+    }
+
     // Add click event listener to each card body
     document.querySelectorAll(".card-body").forEach(cardBody => {
         cardBody.addEventListener("click", () => {
             if ("vibrate" in navigator) {
-                navigator.vibrate(50);
+                navigator.vibrate(30);
             }
         });
     });
 
     document.getElementById("socials").addEventListener("click", () => {
         if ("vibrate" in navigator) {
-            navigator.vibrate(50);
+            navigator.vibrate(30);
         }
     });
 }
@@ -80,8 +86,8 @@ let elemBtnBool = 0; //when dark mode
 function switchButton(e)
 {
     if ("vibrate" in navigator)
-    { 
-        navigator.vibrate([50,25,50]);
+    {
+        navigator.vibrate([20, 50, 20]);
     }
     document.getElementById("socials").classList.toggle("light-mode-bg");
     document.getElementById("about").classList.toggle("light-mode-text");
