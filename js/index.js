@@ -64,7 +64,7 @@ async function getGitHubRepos() {
     document.querySelectorAll(".card-body").forEach(cardBody => {
         cardBody.addEventListener("click", () => {
             if ("vibrate" in navigator) {
-                navigator.vibrate(200);
+                navigator.vibrate(50);
             }
         });
     });
@@ -81,7 +81,7 @@ function switchButton(e)
 {
     if ("vibrate" in navigator)
     { 
-        navigator.vibrate(200);
+        navigator.vibrate([50,25,50]);
     }
     document.getElementById("socials").classList.toggle("light-mode-bg");
     document.getElementById("about").classList.toggle("light-mode-text");
