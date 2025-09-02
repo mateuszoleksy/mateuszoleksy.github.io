@@ -63,14 +63,14 @@ async function getGitHubRepos() {
     // Add click event listener to each card body
     document.querySelectorAll(".card-body").forEach(cardBody => {
         cardBody.addEventListener("click", () => {
-            if (navigator.vibrate) {
+            if ("vibrate" in navigator) {
                 navigator.vibrate(200);
             }
         });
     });
 
     document.getElementById("socials").addEventListener("click", () => {
-        if (navigator.vibrate) {
+        if ("vibrate" in navigator) {
             navigator.vibrate(50);
         }
     });
@@ -79,8 +79,8 @@ async function getGitHubRepos() {
 let elemBtnBool = 0; //when dark mode
 function switchButton(e)
 {
-    if (navigator.vibrate)
-    {
+    if ("vibrate" in navigator)
+    { 
         navigator.vibrate(200);
     }
     document.getElementById("socials").classList.toggle("light-mode-bg");
