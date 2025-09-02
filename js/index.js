@@ -49,7 +49,7 @@ async function getGitHubRepos() {
 <div class="col-12">
   <div class="card mb-3 bg-black text-white rounded-5">
     <div class="card-body">
-      <h5 class="card-title"><a href="${repo.html_url}" target="_blank">${repo.name}</a></h5>
+      <h5 class="card-title"><a href="${repo.html_url}" target="_blank" class="text-link">${repo.name}</a></h5>
       <p class="card-text">${repo.description || "Brak opisu"}</p>
       <span class="badge bg-primary">⭐ ${repo.stargazers_count}</span>
     </div>
