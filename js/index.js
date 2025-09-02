@@ -92,9 +92,38 @@ function switchButton(e)
     document.getElementById("title").classList.toggle("light-mode-text");
     elemBtnBool = ~elemBtnBool;
     if (elemBtnBool) {
+        let meta = document.querySelector("meta[name=theme-color]");
+        let meta_firefox = document.querySelector("meta[name=color-scheme]");
+        if (!meta) {
+            meta = document.createElement("meta");
+            meta.name = "theme-color";
+            document.head.appendChild(meta);
+        }
+        if (!meta_firefox) {
+            meta_firefox = document.createElement("meta");
+            meta_firefox.name = "color-scheme";
+            document.head.appendChild(meta_firefox);
+        }
+        
+        meta.setAttribute("content", '#ffffff');
+        meta_firefox.setAttribute("content", '#ffffff');
         document.getElementById("icon_switch").classList.remove("icon-toggle-on");
         document.getElementById("icon_switch").classList.add("icon-toggle-off");
     } else {
+        let meta = document.querySelector("meta[name=theme-color]");
+        let meta_firefox = document.querySelector("meta[name=color-scheme]");
+        if (!meta) {
+            meta = document.createElement("meta");
+            meta.name = "theme-color";
+            document.head.appendChild(meta);
+        }
+        if (!meta_firefox) {
+            meta_firefox = document.createElement("meta");
+            meta_firefox.name = "color-scheme";
+            document.head.appendChild(meta_firefox);
+        }
+        meta_firefox.setAttribute("content", '#000000');
+        meta.setAttribute("content", '#000000');
         document.getElementById("icon_switch").classList.remove("icon-toggle-off");
         document.getElementById("icon_switch").classList.add("icon-toggle-on");
     }
