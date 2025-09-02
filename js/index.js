@@ -64,6 +64,8 @@ async function getGitHubRepos() {
 let elemBtnBool = 0; //when dark mode
 function switchButton(e)
 {
+    document.getElementById("socials").classList.toggle("light-mode-bg");
+    document.getElementById("about").classList.toggle("light-mode-text");
     document.getElementById("main_div").classList.toggle("light-mode");
     document.getElementById("btn_switch").classList.toggle("light-mode-text");
     document.getElementById("socials").classList.toggle("light-mode-bg");
